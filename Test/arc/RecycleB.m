@@ -9,4 +9,8 @@
 
 @implementation RecycleB
 
+- (void)dealloc {
+    NSLog(@"%@ was dealloced", self);
+}
+
 @end

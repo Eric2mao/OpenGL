@@ -7,9 +7,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "RecycleB.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RecycleA : NSObject
+
+@property (nonatomic, strong) RecycleB *b;
 
 @end
 

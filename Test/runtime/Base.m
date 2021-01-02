@@ -9,4 +9,8 @@
 
 @implementation Base
 
+- (void)draw {
+    NSLog(@"Draw Base");
+}
+
 @end

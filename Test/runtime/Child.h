@@ -1,15 +1,17 @@
 //
-//  Base.h
+//  Child.h
 //  Test
 //
 //  Created by Ericmao on 2020/11/3.
 //
 
-#import <Foundation/Foundation.h>
+#import "Base.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Base : NSObject
+@interface Child : Base
+
+- (void)draw2;
 
 @end
 

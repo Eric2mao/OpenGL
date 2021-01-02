@@ -9,7 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol RecycleBDelagate <NSObject>
+
+- (void)onClicked;
+
+@end
+
 @interface RecycleB : NSObject
+
+@property (nonatomic, strong) id<RecycleBDelagate> delagate;
 
 @end
 

@@ -9,4 +9,21 @@
 
 @implementation Person
 
+- (void)hello {
+    NSLog(@"%@ Hello", self);
+}
+
++ (Person *)getPerson {
+    return [[[Person alloc] init] autorelease];
+}
+
++ (Person *)leakPerson {
+    return [[Person alloc] init];
+}
+
+- (void)dealloc {
+    NSLog(@"%@ was dealloced", self);
+    
+    [super dealloc];
+}
 @end

@@ -9,4 +9,8 @@
 
 @implementation Child2
 
+- (void)draw2 {
+    NSLog(@"Child2 draw2");
+}
+
 @end
